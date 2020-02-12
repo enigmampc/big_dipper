@@ -1,42 +1,35 @@
 {
     "public":{
-        "chainName": "Cosmos Testnet",
-        "chainId": "{Chain ID}",
+        "chainName": "EnigmaChain Testnet",
+        "chainId": "enigma-testnet",
         "gtm": "{Add your Google Tag Manager ID here}",
         "slashingWindow": 10000,
         "uptimeWindow": 250,
         "initialPageSize": 30,
-        "bech32PrefixAccAddr": "cosmos",
-        "bech32PrefixAccPub": "cosmospub",
-        "bech32PrefixValAddr": "cosmosvaloper",
-        "bech32PrefixValPub": "cosmosvaloperpub",
-        "bech32PrefixConsAddr": "cosmosvalcons",
-        "bech32PrefixConsPub": "cosmosvalconspub",
-        "stakingFraction": 1000000, 
-        "powerReduction": null,  
+        "bech32PrefixAccAddr": "enigma",
+        "bech32PrefixAccPub": "enigmapub",
+        "bech32PrefixValAddr": "enigmavaloper",
+        "bech32PrefixValPub": "enigmavaloperpub",
+        "bech32PrefixConsAddr": "enigmavalcons",
+        "bech32PrefixConsPub": "enigmavalconspub",
+        "stakingFraction": 1000000,
+        "powerReduction": 1,
         "coins": [
             {
-                "stakingDenom": "ATOM",
-                "stakingDenomPlural": "ATOMS",
-                "mintingDenom": "uatom",
+                "stakingDenom": "SCRT",
+                "stakingDenomPlural": "SCRTS",
+                "mintingDenom": "uscrt",
                 "staking": true,
                 "stakingFraction": 1000000
-            }, 
-            {
-                "stakingDenom": "MUON",
-                "stakingDenomPlural": "MUONS",
-                "mintingDenom": "umuon",
-                "staking": false,
-                "stakingFraction": 1000000
-            } 
+            }
         ],
         "gasPrice": 0.02,
-        "coingeckoId": "cosmos"
+        "coingeckoId": "enigma"
     },
-    "genesisFile": "{Replace the address of the genesis file of the chain}",
+    "genesisFile": "https://gist.githubusercontent.com/lacabra/29ea80e279a70a8b3315baa0157cfe97/raw/faa8356fc2e4b08e29abb9eeb26237cd7eb9984f/genesis.json",
     "remote":{
-        "rpc":"https://gaia-seeds.interblock.io",
-        "lcd":"https://gaia-seeds.interblock.io:1317"
+        "rpc":"http://172.31.41.58:26657",
+        "lcd":"http://172.31.41.58:1317"
     },
     "debug": {
         "startTimer": true,
@@ -54,5 +47,3 @@
         "delegationInterval": 900000
     }
 }
-
-
