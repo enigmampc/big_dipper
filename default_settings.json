@@ -1,10 +1,10 @@
 {
     "public":{
-        "chainName": "EnigmaChain Testnet",
-        "chainId": "enigma-testnet",
+        "chainName": "Enigma Mainnet",
+        "chainId": "enigma-1",
         "gtm": "{Add your Google Tag Manager ID here}",
-        "slashingWindow": 10000,
-        "uptimeWindow": 250,
+        "slashingWindow": 100,
+        "uptimeWindow": 100,
         "initialPageSize": 30,
         "bech32PrefixAccAddr": "enigma",
         "bech32PrefixAccPub": "enigmapub",
@@ -12,21 +12,20 @@
         "bech32PrefixValPub": "enigmavaloperpub",
         "bech32PrefixConsAddr": "enigmavalcons",
         "bech32PrefixConsPub": "enigmavalconspub",
-        "stakingFraction": 1000000,
-        "powerReduction": 1,
+        "bondDenom": "uscrt",
+        "powerReduction": 1000000,
         "coins": [
             {
-                "stakingDenom": "SCRT",
-                "stakingDenomPlural": "SCRTS",
-                "mintingDenom": "uscrt",
-                "staking": true,
-                "stakingFraction": 1000000
+                "denom": "uscrt",
+                "displayName": "SCRT",
+                "displayNamePlural": "SCRTS",
+                "fraction": 1000000
             }
         ],
         "gasPrice": 0.02,
         "coingeckoId": "enigma"
     },
-    "genesisFile": "https://gist.githubusercontent.com/lacabra/29ea80e279a70a8b3315baa0157cfe97/raw/faa8356fc2e4b08e29abb9eeb26237cd7eb9984f/genesis.json",
+    "genesisFile": "https://raw.githubusercontent.com/enigmampc/enigmachain/master/enigma-1-genesis.json",
     "remote":{
         "rpc":"http://172.31.41.58:26657",
         "lcd":"http://172.31.41.58:1317"
