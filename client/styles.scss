@@ -496,6 +496,32 @@ body {
       font-size: 1.5em;
       transform: translateY(3px);
     }
+
+    .coin-dropdown{
+    display: flex;
+    vertical-align: middle !important;
+    overflow: visible;
+    text-align: center;
+    line-height: normal;
+
+   }
+   .account-dropdown{
+    padding: 0 1rem 0 0.5rem;
+    margin-top: -3px;
+    color: #bd081c;
+    font-weight: bold;
+    position:relative;
+    z-index: 1;
+    
+
+    .dropdown-toggle{
+      background-color:#bd081c;
+      border: solid 0.05rem #bd081c;
+
+    }
+
+   }
+
   }
   
   .vp-diff {
@@ -884,14 +910,33 @@ body {
     border-left-color: $gray-700;
   }
   
-  .validator-tooltip .tooltip-inner {
-    color: $gray-700; 
-    min-width: 200px;
-    padding: 0.1rem 0.1rem;
-    background-color: #fff;
-    
+  .validator-popover-row .img-fluid{
+    height: 30px;
   }
-  
+
+  .validator-popover .validator-popover-card {
+    min-width:235px;
+    position:absolute;
+    font-size: 12px;
+    padding: 0 0.5rem;
+    opacity: 0.9;
+    display:block;
+     
+     .popover-header{
+       background-color: #fff;
+       padding-top: 1rem;
+
+      .card-title{
+        padding: none;
+        margin-bottom: 0;
+      }
+    }
+
+     .material-icons{
+      transform: translateY(5px);
+    }
+  }
+
   
   .redelegate-validators {
     display: inline-block;
